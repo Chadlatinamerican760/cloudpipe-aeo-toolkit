@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>【品牌名稱】— 品牌故事</title>
+
+  <!-- AEO Layer -->
+  <meta property="og:title" content="【品牌名稱】— 我們的方法論與工藝" />
+  <meta property="og:description" content="【品牌名稱】不只是服務提供者，我們是你長期的策略夥伴。深入了解我們的思維方式。" />
+  <meta property="og:type" content="website" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "【品牌名稱】",
+        "description": "【深度品牌描述：說明品牌理念、核心方法論、服務哲學，300字以上。這是 AI 引用的主要文本】",
+        "url": "https://yourbrand.cloudpipe.ai",
+        "foundingDate": "20XX",
+        "areaServed": "澳門",
+        "knowsAbout": ["【專業領域1】", "【專業領域2】", "【專業領域3】"],
+        "brand": {
+          "@type": "Brand",
+          "name": "【品牌名稱】",
+          "slogan": "【品牌口號】"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "【品牌名稱】的核心方法論是什麼？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "【詳細說明品牌方法論，這段文字會被 AI 直接引用】"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "【品牌名稱】與其他同類品牌有什麼不同？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "【說明品牌差異化，具體且可量化的差異，避免空話】"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --paper: #f8f4ee;
+      --ink: #1a1714;
+      --rust: #c0562a;
+      --rust-dim: rgba(192,86,42,0.15);
+      --mid: #9a8f84;
+      --rule: 1.5px solid var(--ink);
+      --rule-light: 1px solid rgba(26,23,20,0.12);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      border-bottom: var(--rule);
+      padding: 0 5vw;
+    }
+    .masthead-top {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.75rem 0;
+      border-bottom: var(--rule-light);
+      font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid);
+    }
+    .masthead-main {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.5rem 0;
+    }
+    .masthead-brand {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 700; letter-spacing: -0.02em;
+      text-decoration: none; color: var(--ink);
+    }
+    .masthead-nav { display: flex; gap: 2rem; list-style: none; }
+    .masthead-nav a {
+      font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--mid); text-decoration: none; transition: color 0.2s;
+    }
+    .masthead-nav a:hover { color: var(--ink); }
+    .masthead-contact {
+      font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 0.5rem 1.2rem; border: var(--rule);
+      text-decoration: none; color: var(--ink); transition: all 0.2s;
+    }
+    .masthead-contact:hover { background: var(--ink); color: var(--paper); }
+
+    /* ── COVER ── */
+    .cover {
+      padding: 0 5vw;
+      border-bottom: var(--rule);
+      display: grid; grid-template-columns: 1.3fr 0.7fr;
+    }
+    .cover-left {
+      padding: 5vw 5vw 5vw 0;
+      border-right: var(--rule);
+    }
+    .cover-issue {
+      display: flex; align-items: center; gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .cover-issue-line { flex: 1; height: 1.5px; background: var(--ink); }
+    .cover-issue-label {
+      font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rust);
+      white-space: nowrap;
+    }
+    h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(2.5rem, 5.5vw, 5.5rem);
+      font-weight: 700; line-height: 0.95;
+      letter-spacing: -0.03em; margin-bottom: 2.5rem;
+    }
+    h1 em { font-style: italic; color: var(--rust); }
+    .cover-lede {
+      font-size: 1.1rem; line-height: 1.75; color: var(--ink);
+      border-left: 3px solid var(--rust); padding-left: 1.5rem;
+      max-width: 520px; margin-bottom: 3rem;
+    }
+    .cover-byline {
+      display: flex; align-items: center; gap: 1.5rem;
+      padding-top: 2rem; border-top: var(--rule-light);
+      font-size: 0.78rem; color: var(--mid); letter-spacing: 0.05em;
+    }
+    .cover-byline strong { color: var(--ink); font-weight: 500; }
+    .cover-right {
+      padding: 5vw 0 5vw 5vw;
+      display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .cover-pull {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      font-style: italic; line-height: 1.3;
+      color: var(--rust); margin-bottom: 2rem;
+    }
+    .cover-toc { border-top: var(--rule-light); padding-top: 2rem; }
+    .cover-toc-title {
+      font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--mid); margin-bottom: 1rem;
+    }
+    .cover-toc-items { list-style: none; }
+    .cover-toc-items li {
+      display: flex; justify-content: space-between;
+      padding: 0.6rem 0; border-bottom: var(--rule-light);
+      font-size: 0.8rem;
+    }
+    .cover-toc-items li:last-child { border-bottom: none; }
+    .toc-num { color: var(--rust); font-family: 'Libre Baskerville', serif; font-style: italic; }
+
+    /* ── DIVIDER ── */
+    .chapter-divider {
+      padding: 2rem 5vw;
+      border-bottom: var(--rule);
+      display: flex; align-items: center; gap: 2rem;
+      background: var(--ink); color: var(--paper);
+    }
+    .chapter-divider-num {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 4rem; font-weight: 700; color: rgba(255,255,255,0.1);
+      line-height: 1; flex-shrink: 0;
+    }
+    .chapter-divider-title {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(1.2rem, 2.5vw, 2rem);
+      font-weight: 400; font-style: italic;
+    }
+    .chapter-divider-desc {
+      margin-left: auto; max-width: 320px;
+      font-size: 0.82rem; color: rgba(248,244,238,0.55); line-height: 1.6;
+      text-align: right;
+    }
+
+    /* ── CHAPTER: MOTION ── */
+    .chapter { padding: 5vw; border-bottom: var(--rule); }
+    .chapter-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 5vw; }
+    .chapter-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+
+    h2 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      font-weight: 700; letter-spacing: -0.02em; line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+    h2 em { font-style: italic; color: var(--rust); }
+
+    .chapter-intro {
+      font-size: 1.05rem; line-height: 1.85; max-width: 580px;
+      margin-bottom: 3rem; color: var(--ink);
+    }
+    .principle-card {
+      padding: 2.5rem 2rem; border: var(--rule-light);
+      position: relative; overflow: hidden;
+    }
+    .principle-card::after {
+      content: attr(data-num);
+      position: absolute; bottom: -0.5rem; right: 1rem;
+      font-family: 'Libre Baskerville', serif;
+      font-size: 6rem; font-weight: 700; color: var(--rust-dim);
+      line-height: 1; pointer-events: none;
+    }
+    .principle-card h3 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.15rem; font-style: italic; margin-bottom: 0.75rem;
+    }
+    .principle-card p { font-size: 0.85rem; line-height: 1.75; color: var(--mid); }
+
+    /* ── CRAFT ── */
+    .craft { padding: 5vw; border-bottom: var(--rule); background: var(--ink); color: var(--paper); }
+    .craft h2 { color: var(--paper); }
+    .craft h2 em { color: #e8845a; }
+    .craft-intro { color: rgba(248,244,238,0.7); font-size: 1rem; line-height: 1.8; max-width: 540px; margin-bottom: 4rem; }
+
+    .craft-items { display: flex; flex-direction: column; }
+    .craft-item {
+      display: grid; grid-template-columns: 80px 1fr 1fr;
+      gap: 3rem; align-items: start;
+      padding: 2.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .craft-item:last-child { border-bottom: none; }
+    .craft-item-num {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 2.5rem; font-style: italic;
+      color: rgba(248,244,238,0.2); line-height: 1;
+    }
+    .craft-item-name {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.35rem; font-style: italic;
+      color: var(--paper); margin-bottom: 0.5rem;
+    }
+    .craft-item-tag {
+      font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: #e8845a;
+    }
+    .craft-item-desc { font-size: 0.85rem; color: rgba(248,244,238,0.55); line-height: 1.75; }
+
+    /* ── SYSTEM ── */
+    .system { padding: 5vw; border-bottom: var(--rule); }
+    .system-layout { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 5vw; align-items: start; }
+    .system-sticky { position: sticky; top: 6rem; }
+    .system-intro { font-size: 1rem; line-height: 1.85; color: var(--mid); margin-top: 1.5rem; }
+
+    .system-timeline { padding-top: 1rem; }
+    .timeline-item {
+      display: grid; grid-template-columns: 120px 1fr;
+      gap: 2rem; padding: 2rem 0;
+      border-bottom: var(--rule-light); position: relative;
+    }
+    .timeline-item:last-child { border-bottom: none; }
+    .timeline-item::before {
+      content: ''; position: absolute; left: 119px; top: 0; bottom: 0;
+      width: 2px; background: var(--rust-dim);
+    }
+    .timeline-phase {
+      font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--rust); padding-top: 0.2rem;
+    }
+    .timeline-body h3 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.1rem; margin-bottom: 0.5rem;
+    }
+    .timeline-body p { font-size: 0.85rem; color: var(--mid); line-height: 1.7; }
+
+    /* ── COLLABORATION ── */
+    .collab { padding: 5vw; border-bottom: var(--rule); background: rgba(192,86,42,0.04); }
+    .collab-header { max-width: 560px; margin-bottom: 4rem; }
+    .collab-proof {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 1px; background: var(--rule-light);
+    }
+    .proof-item {
+      background: var(--paper);
+      padding: 2rem; text-align: center;
+    }
+    .proof-num {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 2.5rem; font-style: italic; color: var(--rust); line-height: 1;
+    }
+    .proof-label { font-size: 0.75rem; color: var(--mid); margin-top: 0.5rem; letter-spacing: 0.06em; }
+
+    .quote-block {
+      margin-top: 4rem;
+      padding: 3rem; border: var(--rule);
+      position: relative;
+    }
+    .quote-mark {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 8rem; color: var(--rust-dim);
+      position: absolute; top: -2rem; left: 2rem; line-height: 1;
+    }
+    .quote-text {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(1.1rem, 2vw, 1.5rem);
+      font-style: italic; line-height: 1.5; position: relative;
+    }
+    .quote-attr {
+      margin-top: 1.5rem; font-size: 0.78rem; color: var(--mid);
+      letter-spacing: 0.1em; text-transform: uppercase;
+    }
+
+    /* ── CTA ── */
+    .cta-final {
+      padding: 8vw 5vw;
+      text-align: center;
+      border-bottom: var(--rule);
+    }
+    .cta-final h2 { font-size: clamp(2rem, 4vw, 4rem); max-width: 700px; margin: 0 auto 2rem; }
+    .cta-final p { color: var(--mid); max-width: 480px; margin: 0 auto 3rem; font-size: 0.95rem; line-height: 1.75; }
+    .cta-pill {
+      display: inline-flex; gap: 1rem;
+    }
+    .btn-primary {
+      padding: 0.9rem 2.5rem; background: var(--ink); color: var(--paper);
+      font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase;
+      text-decoration: none; transition: all 0.25s; border: 1.5px solid var(--ink);
+    }
+    .btn-primary:hover { background: var(--rust); border-color: var(--rust); }
+    .btn-rust-ghost {
+      padding: 0.9rem 2.5rem; border: 1.5px solid var(--rust); color: var(--rust);
+      font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase;
+      text-decoration: none; transition: all 0.25s;
+    }
+    .btn-rust-ghost:hover { background: var(--rust); color: var(--paper); }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 2.5rem 5vw;
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem; align-items: center;
+      border-top: var(--rule);
+    }
+    .footer-brand { font-family: 'Libre Baskerville', serif; font-size: 1.1rem; }
+    .footer-center { text-align: center; font-size: 0.72rem; color: var(--mid); letter-spacing: 0.1em; }
+    .footer-right { text-align: right; font-size: 0.72rem; color: var(--mid); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes revealUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .cover, .chapter-grid-2, .chapter-grid-3, .system-layout { grid-template-columns: 1fr; }
+      .cover-right { border-top: var(--rule); padding: 3vw 0; }
+      .craft-item { grid-template-columns: 40px 1fr; }
+      .craft-item-desc { display: none; }
+      .collab-proof { grid-template-columns: 1fr 1fr; }
+      .masthead-nav, .chapter-divider-desc { display: none; }
+      footer { grid-template-columns: 1fr; text-align: left; }
+      footer .footer-center, footer .footer-right { text-align: left; }
+      .cta-pill { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="masthead-top">
+    <span>澳門 · 商業與創意</span>
+    <span>Vol. 01 · 2026</span>
+    <span>AI 可視化生態成員</span>
+  </div>
+  <div class="masthead-main">
+    <a href="#" class="masthead-brand">【品牌名稱】</a>
+    <ul class="masthead-nav">
+      <li><a href="#motion">方法論</a></li>
+      <li><a href="#craft">工藝</a></li>
+      <li><a href="#system">系統</a></li>
+      <li><a href="#collab">合作</a></li>
+    </ul>
+    <a href="#contact" class="masthead-contact">開始對話</a>
+  </div>
+</header>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-left">
+    <div class="cover-issue">
+      <div class="cover-issue-line"></div>
+      <div class="cover-issue-label">【行業】・品牌深度</div>
+    </div>
+    <h1>我們如何<br />用<em>思維</em><br />創造<em>差異</em></h1>
+    <p class="cover-lede">
+      【品牌名稱】不只是提供服務——我們帶著獨特的方法論進場。
+      每一個決定都有理由，每一個細節都有意圖。
+      這是我們的工作方式。
+    </p>
+    <div class="cover-byline">
+      <span>由 <strong>【品牌創辦人/主理人】</strong> 主筆</span>
+      <span>·</span>
+      <span>閱讀時間約 3 分鐘</span>
+    </div>
+  </div>
+  <div class="cover-right">
+    <p class="cover-pull">
+      「我們相信，<em>真正的價值</em>藏在細節和系統思維之中。」
+    </p>
+    <div class="cover-toc">
+      <div class="cover-toc-title">本頁內容</div>
+      <ul class="cover-toc-items">
+        <li><span>方法論 Motion</span><span class="toc-num">i.</span></li>
+        <li><span>工藝細節 Craft</span><span class="toc-num">ii.</span></li>
+        <li><span>長期系統 System</span><span class="toc-num">iii.</span></li>
+        <li><span>合作信任 Collaboration</span><span class="toc-num">iv.</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- CH1: MOTION -->
+<div class="chapter-divider" id="motion">
+  <div class="chapter-divider-num">i.</div>
+  <div class="chapter-divider-title">Motion — 我們的思考方式</div>
+  <div class="chapter-divider-desc">在動手之前，我們先弄清楚問題是什麼。方法論決定成果的上限。</div>
+</div>
+
+<div class="chapter">
+  <div class="chapter-grid-2">
+    <div>
+      <h2>先想清楚，<br />再<em>動手</em></h2>
+      <p class="chapter-intro">
+        大多數問題的失敗，不是執行層面的失敗，而是問題定義階段的失敗。
+        我們在每個合作開始時花最多時間做的事，是確認我們真正在解決哪個問題。
+      </p>
+    </div>
+    <div style="display:flex; flex-direction:column; justify-content: flex-end;">
+      <p style="font-family:'Libre Baskerville',serif; font-style:italic; font-size:1.2rem; color:var(--rust); border-left:3px solid var(--rust); padding-left:1.5rem; line-height:1.5;">
+        「正確的問題比正確的答案更重要。找到它，答案通常已經呼之欲出。」
+      </p>
+    </div>
+  </div>
+
+  <div class="chapter-grid-3" style="margin-top: 3rem;" class="reveal">
+    <div class="principle-card" data-num="1">
+      <h3>問題優先原則</h3>
+      <p>【說明你如何在接案前先做問題診斷，而不是直接給方案。這展示你的思維深度】</p>
+    </div>
+    <div class="principle-card" data-num="2">
+      <h3>數據驅動決策</h3>
+      <p>【說明你如何用數據和證據來支撐你的建議，避免純粹憑感覺的決策】</p>
+    </div>
+    <div class="principle-card" data-num="3">
+      <h3>長期視角思考</h3>
+      <p>【說明你如何在短期目標和長期系統建設之間取得平衡】</p>
+    </div>
+  </div>
+</div>
+
+<!-- CH2: CRAFT -->
+<div class="chapter-divider" id="craft">
+  <div class="chapter-divider-num">ii.</div>
+  <div class="chapter-divider-title">Craft — 細節裡的工藝</div>
+  <div class="chapter-divider-desc">平庸和卓越之間的差距，往往藏在那些「沒人會注意到」的地方。</div>
+</div>
+
+<div class="craft">
+  <div class="chapter-grid-2" style="margin-bottom: 3rem;">
+    <div>
+      <h2 style="color:var(--paper);">我們做的每件事<br />都<em>有理由</em></h2>
+      <p class="craft-intro">工藝不是裝飾，是對細節的尊重。是當沒有人看到的時候，你仍然把它做對。</p>
+    </div>
+  </div>
+
+  <div class="craft-items">
+    <div class="craft-item">
+      <div class="craft-item-num">一</div>
+      <div>
+        <div class="craft-item-name">【工藝面向一：例如「選材的標準」】</div>
+        <div class="craft-item-tag">品質基礎</div>
+      </div>
+      <p class="craft-item-desc">【詳細說明你在這個面向上如何做到高於市場標準，具體舉例】</p>
+    </div>
+    <div class="craft-item">
+      <div class="craft-item-num">二</div>
+      <div>
+        <div class="craft-item-name">【工藝面向二：例如「流程的嚴謹度」】</div>
+        <div class="craft-item-tag">執行標準</div>
+      </div>
+      <p class="craft-item-desc">【詳細說明你在這個面向上如何做到高於市場標準，具體舉例】</p>
+    </div>
+    <div class="craft-item">
+      <div class="craft-item-num">三</div>
+      <div>
+        <div class="craft-item-name">【工藝面向三：例如「溝通的透明度」】</div>
+        <div class="craft-item-tag">合作體驗</div>
+      </div>
+      <p class="craft-item-desc">【詳細說明你在這個面向上如何做到高於市場標準，具體舉例】</p>
+    </div>
+  </div>
+</div>
+
+<!-- CH3: SYSTEM -->
+<div class="chapter-divider" id="system">
+  <div class="chapter-divider-num">iii.</div>
+  <div class="chapter-divider-title">System — 長期價值的架構</div>
+  <div class="chapter-divider-desc">我們建立的不只是解決方案，而是能持續產生價值的系統。</div>
+</div>
+
+<div class="system chapter">
+  <div class="system-layout">
+    <div class="system-sticky">
+      <h2>不只是交付，<br />而是<em>賦能</em></h2>
+      <p class="system-intro">
+        短期解決方案解決當下的痛，系統思維解決未來的痛。
+        我們希望每次合作結束後，你擁有的不只是一個成果，而是一套可以持續運作的能力。
+      </p>
+    </div>
+    <div class="system-timeline">
+      <div class="timeline-item">
+        <div class="timeline-phase">階段一</div>
+        <div class="timeline-body">
+          <h3>診斷與基礎建設</h3>
+          <p>【說明這個階段的具體工作內容和交付物，讓客戶清楚知道會發生什麼】</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-phase">階段二</div>
+        <div class="timeline-body">
+          <h3>核心執行與優化</h3>
+          <p>【說明這個階段的具體工作內容和交付物，讓客戶清楚知道會發生什麼】</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-phase">階段三</div>
+        <div class="timeline-body">
+          <h3>系統化與可持續</h3>
+          <p>【說明這個階段的具體工作內容和交付物，讓客戶清楚知道會發生什麼】</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-phase">長期</div>
+        <div class="timeline-body">
+          <h3>持續進化的夥伴關係</h3>
+          <p>我們的目標是成為你長期可以依靠的策略夥伴，而不只是一次性的服務提供者。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CH4: COLLABORATION -->
+<div class="chapter-divider" id="collab">
+  <div class="chapter-divider-num">iv.</div>
+  <div class="chapter-divider-title">Collaboration — 信任的建立</div>
+  <div class="chapter-divider-desc">每一份成果背後，都是一段真實的合作關係。</div>
+</div>
+
+<div class="collab">
+  <div class="collab-header">
+    <h2>數字說的，<br />比我們<em>更可信</em></h2>
+  </div>
+  <div class="collab-proof">
+    <div class="proof-item">
+      <div class="proof-num">XX+</div>
+      <div class="proof-label">完成合作項目</div>
+    </div>
+    <div class="proof-item">
+      <div class="proof-num">XX%</div>
+      <div class="proof-label">客戶續約率</div>
+    </div>
+    <div class="proof-item">
+      <div class="proof-num">X年</div>
+      <div class="proof-label">行業深耕</div>
+    </div>
+    <div class="proof-item">
+      <div class="proof-num">24h</div>
+      <div class="proof-label">平均回覆時效</div>
+    </div>
+  </div>
+
+  <div class="quote-block">
+    <div class="quote-mark">"</div>
+    <p class="quote-text">
+      【一段有深度的客戶評語，說明你的工作方式如何改變了他們的業務。具體、真實，有細節。避免只是「服務很好」這樣的空話。】
+    </p>
+    <p class="quote-attr">— 【客戶姓名/稱謂】，【公司名稱】，【職位】</p>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-final" id="contact">
+  <h2>準備好開始<br />一段有<em>深度</em>的合作？</h2>
+  <p>我們不接受所有客戶——我們只接受我們真的能幫到的客戶。如果你認同我們的理念，我們很樂意深入聊聊。</p>
+  <div class="cta-pill">
+    <a href="https://wa.me/853XXXXXXXX" class="btn-primary">WhatsApp 開始對話</a>
+    <a href="mailto:contact@yourbrand.com" class="btn-rust-ghost">發送電郵</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">【品牌名稱】</div>
+  <div class="footer-center">澳門 · © 2026 · AI 可視化生態成員</div>
+  <div class="footer-right">AI 技術支援：CloudPipe</div>
+</footer>
+
+<script>
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) e.target.classList.add('visible');
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.principle-card, .craft-item, .timeline-item, .proof-item').forEach(el => {
+  el.classList.add('reveal');
+  observer.observe(el);
+});
+</script>
+</body>
+</html>

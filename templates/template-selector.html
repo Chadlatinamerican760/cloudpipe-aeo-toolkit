@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CloudPipe 三款網站模板 — 選擇適合你的</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f9f8f6; --fg: #111; --mid: #888;
+      --border: #e4e4e4;
+      --a: #0f2c6b; --b: #5c1a00; --c: #0057ff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Space Grotesk', sans-serif; background: var(--bg); color: var(--fg); }
+
+    header {
+      padding: 3rem 5vw 2rem;
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+    .logo { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: var(--mid); margin-bottom: 1.5rem; }
+    header h1 { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 700; letter-spacing: -0.03em; margin-bottom: 0.75rem; }
+    header p { color: var(--mid); font-size: 0.95rem; max-width: 480px; margin: 0 auto; line-height: 1.6; }
+
+    .selector { padding: 4rem 5vw; }
+    .selector-intro {
+      text-align: center; margin-bottom: 3rem;
+    }
+    .selector-intro h2 { font-size: 1.1rem; font-weight: 500; color: var(--mid); }
+
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+
+    .card {
+      background: #fff; border: 1px solid var(--border);
+      overflow: hidden; transition: box-shadow 0.2s;
+    }
+    .card:hover { box-shadow: 0 8px 40px rgba(0,0,0,0.08); }
+
+    .card-preview {
+      height: 180px; display: flex; align-items: center; justify-content: center;
+      font-size: 3rem; position: relative; overflow: hidden;
+    }
+    .card-a .card-preview { background: linear-gradient(135deg, #f5f0e8 60%, #e8d9b8); }
+    .card-b .card-preview { background: linear-gradient(135deg, #1a1714 60%, #2a1f10); color: #f8f4ee; }
+    .card-c .card-preview { background: #fff; border-bottom: 1px solid var(--border); font-size: 2rem; }
+
+    .card-badge {
+      position: absolute; top: 1rem; right: 1rem;
+      font-size: 0.62rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.25rem 0.6rem; border-radius: 2px;
+    }
+    .card-a .card-badge { background: rgba(184,151,58,0.15); color: #7a5f1a; }
+    .card-b .card-badge { background: rgba(192,86,42,0.2); color: #e8845a; }
+    .card-c .card-badge { background: rgba(0,87,255,0.1); color: var(--c); }
+
+    .card-body { padding: 1.5rem; }
+    .card-type {
+      font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .card-a .card-type { color: var(--a); }
+    .card-b .card-type { color: var(--b); }
+    .card-c .card-type { color: var(--c); }
+
+    .card-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .card-desc { font-size: 0.82rem; color: var(--mid); line-height: 1.6; margin-bottom: 1.25rem; }
+
+    .card-specs { border-top: 1px solid var(--border); padding-top: 1rem; margin-bottom: 1.25rem; }
+    .spec-row { display: flex; justify-content: space-between; font-size: 0.75rem; padding: 0.3rem 0; }
+    .spec-row .sk { color: var(--mid); }
+    .spec-row .sv { font-weight: 500; }
+
+    .card-for { margin-bottom: 1.25rem; }
+    .for-title { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem; }
+    .for-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .for-tag { font-size: 0.72rem; padding: 0.2rem 0.6rem; background: var(--bg); border: 1px solid var(--border); }
+
+    .card-link {
+      display: block; padding: 0.7rem; text-align: center;
+      font-size: 0.78rem; font-weight: 500; text-decoration: none;
+      border: 1px solid; transition: all 0.15s;
+    }
+    .card-a .card-link { border-color: var(--a); color: var(--a); }
+    .card-a .card-link:hover { background: var(--a); color: #fff; }
+    .card-b .card-link { border-color: var(--b); color: var(--b); }
+    .card-b .card-link:hover { background: var(--b); color: #fff; }
+    .card-c .card-link { border-color: var(--c); color: var(--c); }
+    .card-c .card-link:hover { background: var(--c); color: #fff; }
+
+    .compare { padding: 3rem 5vw; border-top: 1px solid var(--border); }
+    .compare h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 2rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    th { text-align: left; padding: 0.75rem 1rem; background: #fff; border: 1px solid var(--border); font-weight: 600; }
+    td { padding: 0.7rem 1rem; border: 1px solid var(--border); color: var(--mid); }
+    td.yes { color: #1a7a3a; font-weight: 500; }
+    td.no { color: #999; }
+    td.col-name { color: var(--fg); font-weight: 500; }
+    tr:nth-child(odd) td { background: #fafafa; }
+
+    .note {
+      margin: 3rem 5vw;
+      padding: 1.5rem;
+      background: #fff; border: 1px solid var(--border);
+      border-left: 3px solid var(--c);
+      font-size: 0.82rem; color: var(--mid); line-height: 1.7;
+    }
+    .note strong { color: var(--fg); }
+
+    footer {
+      padding: 2rem 5vw;
+      border-top: 1px solid var(--border);
+      font-size: 0.72rem; color: var(--mid);
+      display: flex; justify-content: space-between;
+    }
+
+    @media (max-width: 900px) {
+      .cards { grid-template-columns: 1fr; }
+      table { font-size: 0.72rem; }
+      th, td { padding: 0.5rem 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">CloudPipe · 商戶 AI 網站模板系統</div>
+  <h1>三款模板，一個選擇</h1>
+  <p>根據你的目標受眾和業務目標，選擇最適合的網站策略。每款模板均內建 AEO/GEO 優化層。</p>
+</header>
+
+<div class="selector">
+  <div class="selector-intro">
+    <h2>↓ 比較三款模板，選擇你的版本</h2>
+  </div>
+
+  <div class="cards">
+
+    <!-- TEMPLATE A -->
+    <div class="card card-a">
+      <div class="card-preview">
+        🏛️
+        <div class="card-badge">轉化優先</div>
+      </div>
+      <div class="card-body">
+        <div class="card-type">模板 A · 客戶合作版</div>
+        <div class="card-title">信任感 → 行動</div>
+        <p class="card-desc">建立專業信任感，引導訪客一步步從了解你到聯絡你。適合需要簽約或長期合作的服務業。</p>
+        <div class="card-specs">
+          <div class="spec-row"><span class="sk">核心 KPI</span><span class="sv">點擊率 + 表單完成率</span></div>
+          <div class="spec-row"><span class="sk">設計風格</span><span class="sv">精緻奶茶金系</span></div>
+          <div class="spec-row"><span class="sk">頁面分區</span><span class="sv">7 個功能模組</span></div>
+          <div class="spec-row"><span class="sk">內建 FAQ</span><span class="sv">✓ AEO 結構化</span></div>
+        </div>
+        <div class="card-for">
+          <div class="for-title">適合對象</div>
+          <div class="for-tags">
+            <span class="for-tag">顧問</span>
+            <span class="for-tag">進口商</span>
+            <span class="for-tag">代理</span>
+            <span class="for-tag">B2B 服務</span>
+            <span class="for-tag">高客單</span>
+          </div>
+        </div>
+        <a href="template-a-conversion.html" class="card-link" target="_blank">查看模板 A →</a>
+      </div>
+    </div>
+
+    <!-- TEMPLATE B -->
+    <div class="card card-b">
+      <div class="card-preview">
+        📖
+        <div class="card-badge">品牌深度</div>
+      </div>
+      <div class="card-body">
+        <div class="card-type">模板 B · 敘事說故事版</div>
+        <div class="card-title">理念 → 認同</div>
+        <p class="card-desc">雜誌式排版，用你的工作方式和思維邏輯說服最挑剔的客戶。適合強調差異化和品牌個性的商家。</p>
+        <div class="card-specs">
+          <div class="spec-row"><span class="sk">核心 KPI</span><span class="sv">閱讀時間 + 捲動深度</span></div>
+          <div class="spec-row"><span class="sk">設計風格</span><span class="sv">深墨紅色雜誌系</span></div>
+          <div class="spec-row"><span class="sk">頁面分區</span><span class="sv">4 章節敘事架構</span></div>
+          <div class="spec-row"><span class="sk">內建 FAQ</span><span class="sv">✓ AEO 結構化</span></div>
+        </div>
+        <div class="card-for">
+          <div class="for-title">適合對象</div>
+          <div class="for-tags">
+            <span class="for-tag">創意工作室</span>
+            <span class="for-tag">精品品牌</span>
+            <span class="for-tag">餐飲品牌</span>
+            <span class="for-tag">差異化明顯</span>
+          </div>
+        </div>
+        <a href="template-b-storytelling.html" class="card-link" target="_blank">查看模板 B →</a>
+      </div>
+    </div>
+
+    <!-- TEMPLATE C -->
+    <div class="card card-c">
+      <div class="card-preview">
+        ⚡
+        <div class="card-badge">行動優先</div>
+      </div>
+      <div class="card-body">
+        <div class="card-type">模板 C · 效能導向版</div>
+        <div class="card-title">5秒 → 聯絡</div>
+        <p class="card-desc">零裝飾，極致速度。行動裝置體驗最佳，讓客戶在5秒內找到聯絡方式。適合本地商家和直接服務型業務。</p>
+        <div class="card-specs">
+          <div class="spec-row"><span class="sk">核心 KPI</span><span class="sv">行動裝置轉化率</span></div>
+          <div class="spec-row"><span class="sk">設計風格</span><span class="sv">純白極簡系</span></div>
+          <div class="spec-row"><span class="sk">頁面分區</span><span class="sv">5 個精簡區塊</span></div>
+          <div class="spec-row"><span class="sk">內建 FAQ</span><span class="sv">✓ AEO 結構化</span></div>
+        </div>
+        <div class="card-for">
+          <div class="for-title">適合對象</div>
+          <div class="for-tags">
+            <span class="for-tag">零售</span>
+            <span class="for-tag">外賣</span>
+            <span class="for-tag">本地商家</span>
+            <span class="for-tag">即時服務</span>
+            <span class="for-tag">手機優先</span>
+          </div>
+        </div>
+        <a href="template-c-performance.html" class="card-link" target="_blank">查看模板 C →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- COMPARE TABLE -->
+<div class="compare">
+  <h2>功能對比一覽</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>功能項目</th>
+        <th>模板 A（轉化）</th>
+        <th>模板 B（敘事）</th>
+        <th>模板 C（效能）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="col-name">Schema.org JSON-LD</td>
+        <td class="yes">✓ LocalBusiness + FAQPage</td>
+        <td class="yes">✓ Organization + FAQPage</td>
+        <td class="yes">✓ LocalBusiness + FAQPage</td>
+      </tr>
+      <tr>
+        <td class="col-name">Open Graph 元數據</td>
+        <td class="yes">✓ 完整</td>
+        <td class="yes">✓ 完整</td>
+        <td class="yes">✓ 完整</td>
+      </tr>
+      <tr>
+        <td class="col-name">FAQ 結構化問答</td>
+        <td class="yes">✓ 5個可折疊 Q&amp;A</td>
+        <td class="yes">✓ 嵌入 Schema</td>
+        <td class="yes">✓ 表格式直接顯示</td>
+      </tr>
+      <tr>
+        <td class="col-name">作品集/案例展示</td>
+        <td class="yes">✓ 3欄卡片</td>
+        <td class="no">— （敘事式替代）</td>
+        <td class="yes">✓ 3欄含量化成果</td>
+      </tr>
+      <tr>
+        <td class="col-name">客戶評語/信任證明</td>
+        <td class="yes">✓ 3個評語卡片</td>
+        <td class="yes">✓ 引言塊 + 數據</td>
+        <td class="yes">✓ 客戶名單信任欄</td>
+      </tr>
+      <tr>
+        <td class="col-name">服務定價展示</td>
+        <td class="no">— （洽詢為主）</td>
+        <td class="no">— （價值導向）</td>
+        <td class="yes">✓ 直接列出起價</td>
+      </tr>
+      <tr>
+        <td class="col-name">合作流程說明</td>
+        <td class="yes">✓ 4步驟時間軸</td>
+        <td class="yes">✓ 3階段敘事</td>
+        <td class="no">— （簡化）</td>
+      </tr>
+      <tr>
+        <td class="col-name">WhatsApp 直接聯絡</td>
+        <td class="yes">✓</td>
+        <td class="yes">✓</td>
+        <td class="yes">✓ 5秒觸達設計</td>
+      </tr>
+      <tr>
+        <td class="col-name">行動裝置響應式</td>
+        <td class="yes">✓</td>
+        <td class="yes">✓</td>
+        <td class="yes">✓ 行動裝置優先</td>
+      </tr>
+      <tr>
+        <td class="col-name">滾動動畫效果</td>
+        <td class="yes">✓ 淡入上升</td>
+        <td class="yes">✓ 章節過渡</td>
+        <td class="no">— （無動畫）</td>
+      </tr>
+      <tr>
+        <td class="col-name">頁面載入速度</td>
+        <td class="col-name">中等（動畫效果）</td>
+        <td class="col-name">中等（排版較重）</td>
+        <td class="col-name" style="color:#1a7a3a;">最快（純靜態）</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="note">
+  <strong>關於 AEO/GEO 層：</strong>三款模板均內建 AI 可讀優化層，包含 Schema.org JSON-LD 標記、Open Graph 元數據、結構化 FAQ 問答。
+  部署到 Vercel 後需補充：<strong>llms.txt</strong>（AI 爬蟲導覽文件）、<strong>robots.txt</strong>（確認允許 AI 爬蟲）、<strong>Sitemap.xml</strong>。
+  所有模板均有對應的 <strong>【填充位置】</strong>標記，替換為真實品牌資料即可使用。
+  如需進一步客製化，請聯絡 CloudPipe 服務團隊。
+</div>
+
+<footer>
+  <span>CloudPipe 澳門商戶 AI 百科 · 模板系統 v1.0</span>
+  <span>© 2026 CloudPipe · 稻荷環球食品旗下業務</span>
+</footer>
+
+</body>
+</html>

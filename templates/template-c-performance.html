@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>【品牌名稱】</title>
+
+  <!-- AEO Layer: Open Graph -->
+  <meta property="og:title" content="【品牌名稱】— 【核心服務】澳門" />
+  <meta property="og:description" content="【15字內的核心主張。直接、清晰、無廢話】" />
+  <meta property="og:type" content="website" />
+
+  <!-- AEO Layer: Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "name": "【品牌名稱】",
+        "description": "【品牌描述，重點突出核心服務和目標客群，直接、無廢話】",
+        "url": "https://yourbrand.cloudpipe.ai",
+        "telephone": "+853-XXXX-XXXX",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "澳門",
+          "addressCountry": "MO"
+        },
+        "areaServed": "澳門",
+        "priceRange": "$$",
+        "serviceType": ["【服務1】", "【服務2】", "【服務3】"]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "【品牌名稱】是做什麼的？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "【品牌名稱】專注於【核心服務】，主要服務澳門【目標客群】。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "如何快速聯絡？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "WhatsApp +853-XXXX-XXXX，工作時間24小時內回覆。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "收費標準是什麼？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "【直接說明收費區間或定價邏輯，不要迴避這個問題】"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #0a0a0a;
+      --accent: #0057ff;
+      --mid: #888;
+      --border: #e4e4e4;
+      --radius: 0px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      font-size: 15px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw; height: 52px;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-brand {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.9rem; font-weight: 700;
+      text-decoration: none; color: var(--fg);
+      letter-spacing: -0.02em;
+    }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.8rem; color: var(--mid);
+      text-decoration: none; transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--fg); }
+    .nav-cta {
+      font-size: 0.8rem; font-weight: 500;
+      padding: 0.4rem 1rem;
+      background: var(--fg); color: var(--bg);
+      text-decoration: none; transition: background 0.15s;
+    }
+    .nav-cta:hover { background: var(--accent); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100svh;
+      padding: calc(52px + 4rem) 5vw 4rem;
+      display: flex; flex-direction: column; justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-main { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+    h1 {
+      font-size: clamp(2.8rem, 7vw, 7rem);
+      font-weight: 700; line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+      margin-bottom: 2rem;
+    }
+    h1 .accent { color: var(--accent); }
+    .hero-sub {
+      font-size: clamp(1rem, 1.5vw, 1.25rem);
+      color: var(--mid); max-width: 480px;
+      line-height: 1.6; margin-bottom: 2.5rem;
+    }
+    .hero-ctas { display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; padding: 0.75rem 1.5rem;
+      font-size: 0.85rem; font-weight: 500;
+      text-decoration: none; transition: all 0.15s;
+    }
+    .btn-solid {
+      background: var(--fg); color: var(--bg); border: 1px solid var(--fg);
+    }
+    .btn-solid:hover { background: var(--accent); border-color: var(--accent); }
+    .btn-outline { border: 1px solid var(--border); color: var(--mid); }
+    .btn-outline:hover { border-color: var(--fg); color: var(--fg); }
+    .hero-footer {
+      display: flex; justify-content: space-between; align-items: flex-end;
+      padding-top: 2rem; border-top: 1px solid var(--border);
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .hero-stat { display: flex; gap: 3rem; }
+    .stat { }
+    .stat-n {
+      font-family: 'Space Mono', monospace;
+      font-size: 1.4rem; font-weight: 700; line-height: 1;
+    }
+    .stat-l { font-size: 0.72rem; color: var(--mid); margin-top: 0.2rem; }
+    .hero-note { font-size: 0.72rem; color: var(--mid); }
+
+    /* ── TRUST BAR ── */
+    .trust-bar {
+      padding: 1.25rem 5vw;
+      display: flex; align-items: center; gap: 2rem;
+      border-bottom: 1px solid var(--border);
+      overflow-x: auto;
+    }
+    .trust-label {
+      font-size: 0.7rem; color: var(--mid); letter-spacing: 0.1em;
+      text-transform: uppercase; white-space: nowrap; flex-shrink: 0;
+    }
+    .trust-divider { width: 1px; height: 20px; background: var(--border); flex-shrink: 0; }
+    .trust-clients { display: flex; gap: 2rem; align-items: center; }
+    .trust-client {
+      font-size: 0.8rem; font-weight: 500; color: var(--mid);
+      white-space: nowrap; transition: color 0.15s;
+    }
+    .trust-client:hover { color: var(--fg); }
+
+    /* ── SECTION ── */
+    section { padding: 4rem 5vw; border-bottom: 1px solid var(--border); }
+    .section-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--mid); margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+      font-weight: 700; letter-spacing: -0.03em; line-height: 1.1;
+      margin-bottom: 2rem;
+    }
+
+    /* ── WORKS ── */
+    .works-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--border);
+      margin-top: 0;
+    }
+    .work-card {
+      background: var(--bg);
+      padding: 1.5rem;
+      display: flex; flex-direction: column;
+      cursor: default;
+      transition: background 0.15s;
+    }
+    .work-card:hover { background: #f7f7f7; }
+    .work-thumb {
+      width: 100%; aspect-ratio: 16/9;
+      background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; margin-bottom: 1rem;
+    }
+    .work-cat {
+      font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 0.4rem;
+    }
+    .work-title { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .work-desc { font-size: 0.8rem; color: var(--mid); flex: 1; line-height: 1.5; }
+    .work-result {
+      margin-top: 1rem; padding-top: 0.75rem;
+      border-top: 1px solid var(--border);
+      font-family: 'Space Mono', monospace;
+      font-size: 0.72rem; color: var(--fg);
+    }
+    .work-result span { color: var(--accent); }
+
+    /* ── SERVICES LIST ── */
+    .services-list { margin-top: 0; }
+    .service-row {
+      display: grid; grid-template-columns: 2fr 3fr 1fr;
+      gap: 2rem; align-items: baseline;
+      padding: 1.25rem 0; border-bottom: 1px solid var(--border);
+    }
+    .service-row:first-child { border-top: 1px solid var(--border); }
+    .service-name { font-size: 0.92rem; font-weight: 600; }
+    .service-desc { font-size: 0.8rem; color: var(--mid); line-height: 1.5; }
+    .service-price {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.78rem; text-align: right; color: var(--mid); white-space: nowrap;
+    }
+
+    /* ── FAQ ── */
+    .faq-rows { margin-top: 0; }
+    .faq-row {
+      padding: 1rem 0; border-bottom: 1px solid var(--border);
+      display: grid; grid-template-columns: 1fr 2fr; gap: 2rem;
+    }
+    .faq-row:first-child { border-top: 1px solid var(--border); }
+    .faq-q { font-size: 0.85rem; font-weight: 500; padding-top: 0.1rem; }
+    .faq-a { font-size: 0.82rem; color: var(--mid); line-height: 1.6; }
+
+    /* ── CONTACT (FINAL CTA) ── */
+    .contact-section {
+      padding: 4rem 5vw;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4rem; align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .contact-section h2 { margin-bottom: 0.5rem; }
+    .contact-note { font-size: 0.82rem; color: var(--mid); }
+    .contact-actions { display: flex; flex-direction: column; gap: 0.75rem; }
+    .contact-action-row {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 1.25rem;
+      border: 1px solid var(--border);
+      text-decoration: none; color: var(--fg);
+      transition: all 0.15s;
+    }
+    .contact-action-row:hover { border-color: var(--fg); background: var(--fg); color: var(--bg); }
+    .contact-action-row:hover .ca-arrow { color: var(--bg); }
+    .ca-label { font-size: 0.85rem; font-weight: 500; }
+    .ca-detail { font-size: 0.75rem; color: var(--mid); }
+    .contact-action-row:hover .ca-detail { color: rgba(255,255,255,0.6); }
+    .ca-arrow { font-size: 1.1rem; transition: transform 0.15s; }
+    .contact-action-row:hover .ca-arrow { transform: translateX(4px); }
+
+    /* ── TIMER (5秒CTA提示) ── */
+    .five-sec-note {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-size: 0.72rem; color: var(--accent);
+      margin-top: 0.75rem;
+    }
+    .five-sec-note::before {
+      content: '●'; font-size: 0.5rem; animation: blink 1.5s infinite;
+    }
+    @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.2; } }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 1.5rem 5vw;
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.72rem; color: var(--mid);
+      flex-wrap: wrap; gap: 0.5rem;
+    }
+    footer a { color: var(--mid); text-decoration: none; }
+    footer a:hover { color: var(--fg); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      h1 { font-size: clamp(2.5rem, 10vw, 4rem); }
+      .works-grid { grid-template-columns: 1fr; }
+      .service-row { grid-template-columns: 1fr; gap: 0.25rem; }
+      .service-price { text-align: left; }
+      .faq-row { grid-template-columns: 1fr; }
+      .contact-section { grid-template-columns: 1fr; gap: 2rem; }
+      .hero-stat { flex-wrap: wrap; gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-brand">【品牌名稱】</a>
+  <ul class="nav-links">
+    <li><a href="#works">案例</a></li>
+    <li><a href="#services">服務</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">聯絡我們</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-main">
+    <h1>【核心主張<br />放在這裡<br /><span class="accent">三行以內</span>】</h1>
+    <p class="hero-sub">
+      【一句話清晰說明：你是誰、你為誰服務、你解決什麼問題。不超過30字。】
+    </p>
+    <div class="hero-ctas">
+      <a href="https://wa.me/853XXXXXXXX" class="btn btn-solid">WhatsApp 立即聯絡</a>
+      <a href="#works" class="btn btn-outline">查看案例</a>
+    </div>
+  </div>
+  <div class="hero-footer">
+    <div class="hero-stat">
+      <div class="stat">
+        <div class="stat-n">XX+</div>
+        <div class="stat-l">服務客戶</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">X年</div>
+        <div class="stat-l">行業經驗</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">24h</div>
+        <div class="stat-l">回覆保證</div>
+      </div>
+    </div>
+    <div class="hero-note">澳門 · 本地服務 · 即時響應</div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-label">服務過</div>
+  <div class="trust-divider"></div>
+  <div class="trust-clients">
+    <span class="trust-client">【客戶A】</span>
+    <span class="trust-client">【客戶B】</span>
+    <span class="trust-client">【客戶C】</span>
+    <span class="trust-client">【客戶D】</span>
+    <span class="trust-client">【客戶E】</span>
+    <span class="trust-client">【客戶F】</span>
+  </div>
+</div>
+
+<!-- WORKS -->
+<section id="works">
+  <div class="section-label">// 精選案例</div>
+  <div class="works-grid">
+    <div class="work-card">
+      <div class="work-thumb">🏢</div>
+      <div class="work-cat">【行業類別】</div>
+      <div class="work-title">【案例標題，具體描述做了什麼】</div>
+      <div class="work-desc">【一句話說明背景和挑戰，讓讀者理解業務場景】</div>
+      <div class="work-result">成果 → <span>【具體可量化的結果，例如：銷售提升30%】</span></div>
+    </div>
+    <div class="work-card">
+      <div class="work-thumb">🍽️</div>
+      <div class="work-cat">【行業類別】</div>
+      <div class="work-title">【案例標題，具體描述做了什麼】</div>
+      <div class="work-desc">【一句話說明背景和挑戰，讓讀者理解業務場景】</div>
+      <div class="work-result">成果 → <span>【具體可量化的結果】</span></div>
+    </div>
+    <div class="work-card">
+      <div class="work-thumb">📱</div>
+      <div class="work-cat">【行業類別】</div>
+      <div class="work-title">【案例標題，具體描述做了什麼】</div>
+      <div class="work-desc">【一句話說明背景和挑戰，讓讀者理解業務場景】</div>
+      <div class="work-result">成果 → <span>【具體可量化的結果】</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-label">// 服務清單</div>
+  <div class="services-list">
+    <div class="service-row">
+      <div class="service-name">【服務名稱一】</div>
+      <div class="service-desc">【15字內描述這個服務包含什麼，解決什麼問題】</div>
+      <div class="service-price">MOP X,XXX 起</div>
+    </div>
+    <div class="service-row">
+      <div class="service-name">【服務名稱二】</div>
+      <div class="service-desc">【15字內描述這個服務包含什麼，解決什麼問題】</div>
+      <div class="service-price">MOP X,XXX 起</div>
+    </div>
+    <div class="service-row">
+      <div class="service-name">【服務名稱三】</div>
+      <div class="service-desc">【15字內描述這個服務包含什麼，解決什麼問題】</div>
+      <div class="service-price">MOP X,XXX 起</div>
+    </div>
+    <div class="service-row">
+      <div class="service-name">【服務名稱四】</div>
+      <div class="service-desc">【15字內描述這個服務包含什麼，解決什麼問題】</div>
+      <div class="service-price">按需報價</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-label">// 常見問題</div>
+  <div class="faq-rows">
+    <div class="faq-row">
+      <div class="faq-q">【品牌名稱】是做什麼的？</div>
+      <div class="faq-a">【品牌名稱】專注於【核心服務描述】，主要服務澳門【目標客群】，幫助他們【解決什麼問題，達到什麼目標】。</div>
+    </div>
+    <div class="faq-row">
+      <div class="faq-q">最快多久可以開始？</div>
+      <div class="faq-a">聯絡後24小時內回覆，確認需求後通常【X天/週】內可以正式開始。緊急項目可以優先安排。</div>
+    </div>
+    <div class="faq-row">
+      <div class="faq-q">收費怎麼計算？</div>
+      <div class="faq-a">【直接說明定價邏輯。例如：按項目固定報價 / 按月收費 / 按結果收費。透明定價是建立信任的最快方式。】</div>
+    </div>
+    <div class="faq-row">
+      <div class="faq-q">服務範圍只限澳門嗎？</div>
+      <div class="faq-a">主要服務澳門客戶，可視情況服務大灣區其他城市。詳情歡迎直接洽詢。</div>
+    </div>
+    <div class="faq-row">
+      <div class="faq-q">如何確保服務品質？</div>
+      <div class="faq-a">【說明你的品質保證機制，例如：交付前審核流程、不滿意修改保證、售後跟進機制等。】</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div class="contact-section" id="contact">
+  <div>
+    <h2>準備好了嗎？</h2>
+    <p class="contact-note">選擇最方便你的方式聯絡。我們保證24小時內回覆。</p>
+    <div class="five-sec-note">目標：5秒內找到聯絡方式，完成第一步</div>
+  </div>
+  <div class="contact-actions">
+    <a href="https://wa.me/853XXXXXXXX" class="contact-action-row">
+      <div>
+        <div class="ca-label">WhatsApp</div>
+        <div class="ca-detail">+853 XXXX XXXX · 最快回覆</div>
+      </div>
+      <div class="ca-arrow">→</div>
+    </a>
+    <a href="tel:+853XXXXXXXX" class="contact-action-row">
+      <div>
+        <div class="ca-label">電話</div>
+        <div class="ca-detail">+853 XXXX XXXX · 週一至週六 09:00-18:00</div>
+      </div>
+      <div class="ca-arrow">→</div>
+    </a>
+    <a href="mailto:contact@yourbrand.com" class="contact-action-row">
+      <div>
+        <div class="ca-label">電郵</div>
+        <div class="ca-detail">contact@yourbrand.com · 24小時回覆</div>
+      </div>
+      <div class="ca-arrow">→</div>
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2026 【品牌名稱】 · 澳門</span>
+  <span>AI 可視化技術支援：<a href="#">CloudPipe</a></span>
+</footer>
+
+</body>
+</html>

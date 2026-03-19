@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>【品牌名稱】— 專業服務 | 澳門</title>
+
+  <!-- AEO Layer: Open Graph -->
+  <meta property="og:title" content="【品牌名稱】— 澳門頂尖專業服務" />
+  <meta property="og:description" content="【核心價值主張：一句話說清楚你為客戶解決什麼問題】" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourbrand.cloudpipe.ai" />
+  <meta property="og:image" content="https://yourbrand.cloudpipe.ai/og-image.jpg" />
+  <meta property="og:locale" content="zh_TW" />
+
+  <!-- AEO Layer: SEO Meta -->
+  <meta name="description" content="【品牌名稱】是澳門領先的【行業】服務商，專注於【核心服務】。立即聯絡獲取方案。" />
+  <meta name="keywords" content="澳門, 【行業關鍵詞】, 【服務類型】, 【品牌名稱】" />
+
+  <!-- AEO Layer: Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "name": "【品牌名稱】",
+        "description": "【完整業務描述，200字以上，AI 引用的主要來源】",
+        "url": "https://yourbrand.cloudpipe.ai",
+        "telephone": "+853-XXXX-XXXX",
+        "email": "contact@yourbrand.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "【街道地址】",
+          "addressLocality": "澳門",
+          "addressCountry": "MO"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "22.1987",
+          "longitude": "113.5439"
+        },
+        "openingHours": "Mo-Fr 09:00-18:00",
+        "priceRange": "$$",
+        "areaServed": "澳門",
+        "serviceType": ["【服務1】", "【服務2】", "【服務3】"]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "【品牌名稱】提供哪些服務？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "【品牌名稱】提供【服務1】、【服務2】及【服務3】，服務範圍涵蓋整個澳門地區。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "如何與【品牌名稱】合作？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "您可以透過電話、WhatsApp 或網站表單聯絡我們。通常在24小時內回覆，並安排免費初步諮詢。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "【品牌名稱】服務哪些客戶類型？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "我們主要服務【目標客群描述】，包括【客戶類型1】和【客戶類型2】。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --ink: #0f0e0c;
+      --cream: #f5f0e8;
+      --gold: #b8973a;
+      --gold-light: #d4ad4f;
+      --stone: #8c8478;
+      --white: #fefefe;
+      --gap: 1px solid rgba(139,132,120,0.2);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 4vw;
+      background: rgba(245,240,232,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: var(--gap);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem; font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.82rem; font-weight: 400; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--stone);
+      text-decoration: none; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--ink); }
+    .nav-cta {
+      padding: 0.55rem 1.4rem;
+      background: var(--ink); color: var(--cream);
+      font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em;
+      text-transform: uppercase; text-decoration: none;
+      border: 1px solid var(--ink); transition: all 0.25s;
+    }
+    .nav-cta:hover { background: transparent; color: var(--ink); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 5rem;
+    }
+    .hero-left {
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 5vw 4vw 5vw 6vw;
+      border-right: var(--gap);
+    }
+    .hero-tag {
+      font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1.5rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .hero-tag::before {
+      content: ''; display: block; width: 32px; height: 1px; background: var(--gold);
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.8rem, 5.5vw, 5rem);
+      font-weight: 600; line-height: 1.08;
+      letter-spacing: -0.02em;
+      margin-bottom: 2rem;
+    }
+    h1 em { font-style: italic; color: var(--gold); }
+    .hero-desc {
+      font-size: 1rem; color: var(--stone); max-width: 420px;
+      line-height: 1.8; margin-bottom: 3rem;
+    }
+    .hero-actions { display: flex; gap: 1rem; align-items: center; }
+    .btn-primary {
+      padding: 0.9rem 2rem;
+      background: var(--ink); color: var(--cream);
+      font-size: 0.82rem; font-weight: 500; letter-spacing: 0.08em;
+      text-transform: uppercase; text-decoration: none;
+      transition: all 0.25s; border: 1px solid var(--ink);
+      display: inline-block;
+    }
+    .btn-primary:hover { background: var(--gold); border-color: var(--gold); }
+    .btn-ghost {
+      font-size: 0.82rem; color: var(--stone); letter-spacing: 0.06em;
+      text-decoration: none; display: flex; align-items: center; gap: 0.4rem;
+      transition: color 0.2s;
+    }
+    .btn-ghost:hover { color: var(--ink); }
+    .hero-right {
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 5vw 4vw;
+    }
+    .hero-stat-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 1px; background: rgba(139,132,120,0.2);
+      margin-top: auto;
+    }
+    .hero-stat {
+      background: var(--cream);
+      padding: 2rem;
+    }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem; font-weight: 600; color: var(--ink);
+      line-height: 1;
+    }
+    .stat-label { font-size: 0.75rem; color: var(--stone); margin-top: 0.4rem; letter-spacing: 0.08em; }
+
+    /* ── USP STRIP ── */
+    .usp-strip {
+      border-top: var(--gap); border-bottom: var(--gap);
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      background: rgba(139,132,120,0.06);
+    }
+    .usp-item {
+      padding: 3rem 2.5rem;
+      border-right: var(--gap);
+    }
+    .usp-item:last-child { border-right: none; }
+    .usp-icon {
+      font-size: 1.5rem; margin-bottom: 1rem;
+    }
+    .usp-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem; font-weight: 600; margin-bottom: 0.6rem;
+    }
+    .usp-desc { font-size: 0.88rem; color: var(--stone); line-height: 1.7; }
+
+    /* ── SECTION BASE ── */
+    section { padding: 6rem 6vw; }
+    .section-label {
+      font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .section-label::before {
+      content: ''; display: block; width: 24px; height: 1px; background: var(--gold);
+    }
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 600; line-height: 1.1; letter-spacing: -0.01em;
+      margin-bottom: 0.5rem;
+    }
+    h2 em { font-style: italic; color: var(--gold); }
+
+    /* ── PORTFOLIO ── */
+    .portfolio { background: var(--white); }
+    .portfolio-header {
+      display: flex; justify-content: space-between; align-items: flex-end;
+      margin-bottom: 3rem; border-bottom: var(--gap); padding-bottom: 2rem;
+    }
+    .portfolio-header p { max-width: 360px; font-size: 0.9rem; color: var(--stone); }
+    .portfolio-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+    }
+    .portfolio-card {
+      position: relative; overflow: hidden;
+      background: var(--cream);
+      cursor: pointer;
+    }
+    .portfolio-card-img {
+      width: 100%; aspect-ratio: 4/3;
+      background: linear-gradient(135deg, #e8e0d4 0%, #d4c9b8 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; transition: transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    .portfolio-card:hover .portfolio-card-img { transform: scale(1.04); }
+    .portfolio-card-info { padding: 1.25rem; border-top: var(--gap); }
+    .portfolio-card-tag {
+      font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 0.4rem;
+    }
+    .portfolio-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; }
+
+    /* ── SERVICES ── */
+    .services-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 1px; background: rgba(139,132,120,0.2); margin-top: 3rem;
+    }
+    .service-item {
+      background: var(--cream); padding: 2.5rem;
+      transition: background 0.2s;
+    }
+    .service-item:hover { background: var(--white); }
+    .service-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem; color: rgba(139,132,120,0.2); font-weight: 600;
+      line-height: 1; margin-bottom: 0.5rem;
+    }
+    .service-title { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 600; margin-bottom: 0.75rem; }
+    .service-desc { font-size: 0.88rem; color: var(--stone); line-height: 1.7; }
+
+    /* ── PROCESS ── */
+    .process { background: var(--ink); color: var(--cream); }
+    .process .section-label { color: var(--gold-light); }
+    .process .section-label::before { background: var(--gold-light); }
+    .process h2 { color: var(--cream); }
+    .process-steps {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 1px; background: rgba(255,255,255,0.08); margin-top: 3rem;
+    }
+    .process-step {
+      padding: 2.5rem 2rem;
+      background: var(--ink);
+    }
+    .step-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1.5rem;
+    }
+    .step-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; color: var(--cream); margin-bottom: 0.75rem; }
+    .step-desc { font-size: 0.82rem; color: rgba(245,240,232,0.55); line-height: 1.7; }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials { background: var(--white); }
+    .testimonial-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem; margin-top: 3rem;
+    }
+    .testimonial-card {
+      padding: 2rem; border: var(--gap); position: relative;
+    }
+    .testimonial-card::before {
+      content: '"';
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 5rem; color: rgba(184,151,58,0.15);
+      position: absolute; top: 0.5rem; left: 1.5rem;
+      line-height: 1;
+    }
+    .testimonial-text { font-size: 0.9rem; color: var(--stone); line-height: 1.8; margin-bottom: 1.5rem; padding-top: 1.5rem; }
+    .testimonial-author { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 600; }
+    .testimonial-role { font-size: 0.75rem; color: var(--gold); margin-top: 0.25rem; }
+
+    /* ── FAQ ── */
+    .faq { border-top: var(--gap); }
+    .faq-list { margin-top: 3rem; }
+    .faq-item { border-bottom: var(--gap); }
+    .faq-q {
+      width: 100%; text-align: left; background: none; border: none; cursor: pointer;
+      padding: 1.5rem 0;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem; color: var(--ink);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .faq-q span { font-size: 1.2rem; color: var(--gold); transition: transform 0.3s; }
+    .faq-q.open span { transform: rotate(45deg); }
+    .faq-a { font-size: 0.88rem; color: var(--stone); line-height: 1.8; padding: 0 0 1.5rem; display: none; max-width: 680px; }
+    .faq-a.open { display: block; }
+
+    /* ── CTA BANNER ── */
+    .cta-banner {
+      padding: 6rem 6vw;
+      background: linear-gradient(135deg, #0f0e0c 60%, #1a1712);
+      color: var(--cream);
+      display: grid; grid-template-columns: 1fr auto;
+      gap: 4rem; align-items: center;
+    }
+    .cta-banner h2 { color: var(--cream); max-width: 600px; }
+    .cta-banner p { color: rgba(245,240,232,0.6); margin-top: 0.75rem; font-size: 0.9rem; }
+    .cta-actions { display: flex; flex-direction: column; gap: 1rem; white-space: nowrap; }
+    .btn-gold {
+      padding: 0.9rem 2rem; background: var(--gold); color: var(--ink);
+      font-size: 0.82rem; font-weight: 500; letter-spacing: 0.08em;
+      text-transform: uppercase; text-decoration: none;
+      border: 1px solid var(--gold); transition: all 0.25s;
+      display: inline-block; text-align: center;
+    }
+    .btn-gold:hover { background: transparent; color: var(--gold); }
+    .btn-outline-cream {
+      padding: 0.9rem 2rem;
+      border: 1px solid rgba(245,240,232,0.25); color: rgba(245,240,232,0.7);
+      font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase;
+      text-decoration: none; transition: all 0.25s; display: block; text-align: center;
+    }
+    .btn-outline-cream:hover { border-color: var(--cream); color: var(--cream); }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 3rem 6vw;
+      border-top: var(--gap);
+      display: flex; justify-content: space-between; align-items: center;
+      background: var(--cream);
+    }
+    .footer-brand { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; }
+    .footer-copy { font-size: 0.75rem; color: var(--stone); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero-left > * {
+      animation: fadeUp 0.7s ease both;
+    }
+    .hero-left > *:nth-child(1) { animation-delay: 0.1s; }
+    .hero-left > *:nth-child(2) { animation-delay: 0.25s; }
+    .hero-left > *:nth-child(3) { animation-delay: 0.4s; }
+    .hero-left > *:nth-child(4) { animation-delay: 0.55s; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-right { display: none; }
+      .hero-left { padding: 3rem 5vw; }
+      .nav-links { display: none; }
+      .usp-strip, .services-grid, .process-steps, .testimonial-grid, .portfolio-grid { grid-template-columns: 1fr; }
+      .cta-banner { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">【品牌名稱】</a>
+  <ul class="nav-links">
+    <li><a href="#portfolio">案例</a></li>
+    <li><a href="#services">服務</a></li>
+    <li><a href="#process">流程</a></li>
+    <li><a href="#faq">常見問題</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">立即諮詢</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-tag">澳門領先【行業】服務商</div>
+    <h1>解決你最重要<br />的<em>商業問題</em></h1>
+    <p class="hero-desc">
+      【一句話價值主張：說明你為哪類客戶、解決什麼核心問題、帶來什麼成果】。
+      我們服務澳門各大【行業】客戶，成效有目共睹。
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">立即獲取方案</a>
+      <a href="#portfolio" class="btn-ghost">查看案例 →</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-stat-grid">
+      <div class="hero-stat">
+        <div class="stat-num">XX+</div>
+        <div class="stat-label">服務客戶數量</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">XX%</div>
+        <div class="stat-label">客戶滿意度</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">X年</div>
+        <div class="stat-label">行業深耕經驗</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">24h</div>
+        <div class="stat-label">回覆承諾時效</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USP STRIP -->
+<div class="usp-strip">
+  <div class="usp-item">
+    <div class="usp-icon">◈</div>
+    <div class="usp-title">核心優勢一</div>
+    <p class="usp-desc">【說明這個優勢如何直接為客戶帶來價值，具體化，避免空話】</p>
+  </div>
+  <div class="usp-item">
+    <div class="usp-icon">◈</div>
+    <div class="usp-title">核心優勢二</div>
+    <p class="usp-desc">【說明這個優勢如何直接為客戶帶來價值，具體化，避免空話】</p>
+  </div>
+  <div class="usp-item">
+    <div class="usp-icon">◈</div>
+    <div class="usp-title">核心優勢三</div>
+    <p class="usp-desc">【說明這個優勢如何直接為客戶帶來價值，具體化，避免空話】</p>
+  </div>
+</div>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+  <div class="portfolio-header">
+    <div>
+      <div class="section-label">精選案例</div>
+      <h2>我們的<em>成果</em>說話</h2>
+    </div>
+    <p>每個案例背後都是真實的商業挑戰與解決方案。選擇你最感興趣的行業深入了解。</p>
+  </div>
+  <div class="portfolio-grid">
+    <div class="portfolio-card">
+      <div class="portfolio-card-img">🏢</div>
+      <div class="portfolio-card-info">
+        <div class="portfolio-card-tag">【行業類別】</div>
+        <div class="portfolio-card-title">【案例名稱或客戶類型描述】</div>
+      </div>
+    </div>
+    <div class="portfolio-card">
+      <div class="portfolio-card-img">🍽️</div>
+      <div class="portfolio-card-info">
+        <div class="portfolio-card-tag">【行業類別】</div>
+        <div class="portfolio-card-title">【案例名稱或客戶類型描述】</div>
+      </div>
+    </div>
+    <div class="portfolio-card">
+      <div class="portfolio-card-img">🛒</div>
+      <div class="portfolio-card-info">
+        <div class="portfolio-card-tag">【行業類別】</div>
+        <div class="portfolio-card-title">【案例名稱或客戶類型描述】</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-label">服務範圍</div>
+  <h2>我們能為你<em>做什麼</em></h2>
+  <div class="services-grid">
+    <div class="service-item">
+      <div class="service-num">01</div>
+      <div class="service-title">【服務名稱一】</div>
+      <p class="service-desc">【具體描述這項服務包含哪些內容、適合什麼樣的客戶、大概的交付周期】</p>
+    </div>
+    <div class="service-item">
+      <div class="service-num">02</div>
+      <div class="service-title">【服務名稱二】</div>
+      <p class="service-desc">【具體描述這項服務包含哪些內容、適合什麼樣的客戶、大概的交付周期】</p>
+    </div>
+    <div class="service-item">
+      <div class="service-num">03</div>
+      <div class="service-title">【服務名稱三】</div>
+      <p class="service-desc">【具體描述這項服務包含哪些內容、適合什麼樣的客戶、大概的交付周期】</p>
+    </div>
+    <div class="service-item">
+      <div class="service-num">04</div>
+      <div class="service-title">【服務名稱四】</div>
+      <p class="service-desc">【具體描述這項服務包含哪些內容、適合什麼樣的客戶、大概的交付周期】</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="section-label">合作流程</div>
+  <h2>從接觸到交付<br />四個清晰步驟</h2>
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="step-num">Step 01</div>
+      <div class="step-title">免費初步諮詢</div>
+      <p class="step-desc">24小時內回覆，深入了解您的業務需求與目標，確認合作方向。</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">Step 02</div>
+      <div class="step-title">方案制定</div>
+      <p class="step-desc">根據您的具體情況，制定量身訂製的解決方案與執行計劃。</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">Step 03</div>
+      <div class="step-title">執行交付</div>
+      <p class="step-desc">透明的進度追蹤，定期溝通更新，確保品質與時間表符合預期。</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">Step 04</div>
+      <div class="step-title">持續支援</div>
+      <p class="step-desc">交付後的持續跟進與優化，確保長期效果最大化。</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="section-label">客戶回饋</div>
+  <h2>他們<em>說的</em></h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <p class="testimonial-text">【真實客戶評語，具體說明合作體驗或成果，避免空泛的讚美詞】</p>
+      <div class="testimonial-author">【客戶姓名/稱謂】</div>
+      <div class="testimonial-role">【客戶公司】・【職位】</div>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-text">【真實客戶評語，具體說明合作體驗或成果，避免空泛的讚美詞】</p>
+      <div class="testimonial-author">【客戶姓名/稱謂】</div>
+      <div class="testimonial-role">【客戶公司】・【職位】</div>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-text">【真實客戶評語，具體說明合作體驗或成果，避免空泛的讚美詞】</p>
+      <div class="testimonial-author">【客戶姓名/稱謂】</div>
+      <div class="testimonial-role">【客戶公司】・【職位】</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ (AEO 結構化問答) -->
+<section class="faq" id="faq">
+  <div class="section-label">常見問題</div>
+  <h2>你可能想問的<em>問題</em></h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        【品牌名稱】提供哪些服務？ <span>+</span>
+      </button>
+      <p class="faq-a">【品牌名稱】提供【服務1】、【服務2】及【服務3】，服務範圍涵蓋整個澳門地區。我們針對不同規模的企業提供靈活的解決方案。</p>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        合作的最低預算或規模要求是什麼？ <span>+</span>
+      </button>
+      <p class="faq-a">【說明你的最低合作門檻，或者說明沒有門檻。讓潛在客戶清楚了解是否適合自己】</p>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        一般的交付周期是多長？ <span>+</span>
+      </button>
+      <p class="faq-a">【根據不同服務類型說明具體的交付時間。例如：小型項目通常需要X週，大型項目需要X個月】</p>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        如何確保服務品質？ <span>+</span>
+      </button>
+      <p class="faq-a">【說明你的品質保證機制，例如：修改次數、滿意保證、售後服務政策等】</p>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        如何開始合作？ <span>+</span>
+      </button>
+      <p class="faq-a">最簡單的方式是填寫下方的諮詢表單，或直接致電 +853-XXXX-XXXX。我們會在24小時內聯絡您，安排免費的初步諮詢。</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner" id="contact">
+  <div>
+    <div class="section-label" style="color: var(--gold-light);">開始合作</div>
+    <h2>準備好讓業務<br /><em>更上一層樓？</em></h2>
+    <p>立即聯絡我們，24小時內獲得免費初步諮詢。沒有義務，只有真誠的建議。</p>
+  </div>
+  <div class="cta-actions">
+    <a href="https://wa.me/853XXXXXXXX" class="btn-gold">WhatsApp 立即聯絡</a>
+    <a href="mailto:contact@yourbrand.com" class="btn-outline-cream">發送電郵</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">【品牌名稱】</div>
+  <div class="footer-copy">© 2026 【品牌名稱】. 澳門 · AI 可視化技術支援：CloudPipe</div>
+</footer>
+
+<script>
+function toggleFaq(btn) {
+  const answer = btn.nextElementSibling;
+  const isOpen = btn.classList.contains('open');
+  document.querySelectorAll('.faq-q').forEach(b => {
+    b.classList.remove('open');
+    b.nextElementSibling.classList.remove('open');
+  });
+  if (!isOpen) {
+    btn.classList.add('open');
+    answer.classList.add('open');
+  }
+}
+
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.usp-item, .portfolio-card, .service-item, .process-step, .testimonial-card').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  observer.observe(el);
+});
+</script>
+
+</body>
+</html>

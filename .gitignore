@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.db
+*.db-shm
+*.db-wal
+.env
+node_modules/
+.vercel/
